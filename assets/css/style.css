@@ -1,0 +1,313 @@
+/*************************
+-----COULEURS DE FOND-----
+*************************/
+#content{
+  background-color: #666565;
+  height: 2300px;
+}
+#color_Pink{
+  background-color: #FF0084;
+  height: 2300px;
+  padding-right: 0;
+}
+@media screen and (max-width: 500px) {
+  #color_Pink{
+    height: 2850px;
+  }
+  #content{
+    height: 2850px;
+  }
+}
+/**************************
+--------COORDONNEES--------
+**************************/
+.coordonnes{
+  padding-top: 10px;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+.fa{
+  color: white;
+}
+.line{
+  border: 1px solid #FF0084;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.tel{
+  text-align: center;
+}
+.mail{
+  text-align: right;
+}
+.linkedin{
+  text-align: left;
+}
+.github{
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .coordonnes, .tel, .mail, .linkedin, .github{
+    text-align: center;
+  }
+}
+/**************************
+-------NOM_PRENOM-JOB------
+**************************/
+#prenom{
+  margin-top: 10px;
+  color: #f3add9;
+  text-shadow: 1px 1px #f3add9;
+  font-family: 'Cabin', sans-serif;
+}
+.prenom_nom{
+  margin-top: 10px;
+  color: white;
+  text-shadow: 1px 1px white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 3em;
+}
+@media screen and (max-width: 500px) {
+  .prenom_nom{
+    font-size: 2em;
+    text-align: center;
+  }
+  .job h3{
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 500px) {
+ #job{
+   font-size: 4em;
+   text-align: center;
+ }
+}
+#job{
+  font-family: 'Clicker Script', cursive;
+  text-align: right;
+  margin-top: 15px;
+  color: #FF0084;
+  text-shadow: 1px 1px #f3add9;
+  font-weight: bold;
+}
+/**************************
+--------COMPETENCES--------
+**************************/
+#competences{
+  font-family: 'Clicker Script', cursive;
+  color: #f3add9;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.competences{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#outils{
+  font-family: 'Cabin', sans-serif;
+  color: #FF0084;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+#langage{
+  font-family: 'Cabin', sans-serif;
+  text-align: left;
+  color: #FF0084;
+  font-weight: bold;
+  margin-top: -48px;
+  margin-bottom: 20px;
+}
+#framework{
+  margin-top: -48px;
+  font-family: 'Cabin', sans-serif;
+  text-align: left;
+  color: #FF0084;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.liste_outils{
+  text-align: left;
+  color: white;
+}
+.liste_langage{
+  text-align: left;
+  color: white;
+}
+progress{                  /* Barre de progression */
+text-align: center;
+padding: 4px;
+border: 0 none;
+background: #444;
+border-radius: 14px;
+box-shadow: inset 0px 1px 1px #C19BA4,
+0px 1px 0px #625659;
+width: 300px;
+}
+progress::-moz-progress-bar{                 /* Barre de progression */
+background: #B432E5;
+border-radius: 12px;
+box-shadow: inset 0 -2px 4px #E5325D,
+0 2px 5px 0px #940C1A;
+}
+@media screen and (max-width: 500px) {
+  #outils{
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  #langage{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #framework{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #competences{
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 20px;
+  }
+  .competences{
+    text-align: left;
+  }
+  progress{
+    text-align: left;
+    width: 200px;
+  }
+}
+/**************************
+--------EXPERIENCES--------
+**************************/
+#experiences{
+  font-family: 'Clicker Script', cursive;
+  color: #f3add9;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.experiences{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.annee{
+  color: #FF0084;
+  text-decoration: underline;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.titre_descriptif{
+  color: #f3add9;
+  font-size: 16px;
+  font-weight: bold;
+}
+.descriptif{
+  color: white;
+  font-size: 11px;
+}
+@media screen and (max-width: 500px) {
+  #experiences{
+    text-align: center;
+  }
+}
+/**************************
+--------FORMATIONS--------
+**************************/
+#formation{
+  font-family: 'Clicker Script', cursive;
+  color: #f3add9;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+}
+.formation{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 500px) {
+  #formation{
+    text-align: center;
+  }
+}
+/**************************
+-----QUALITES PERSOS------
+**************************/
+#qualites{
+  font-family: 'Clicker Script', cursive;
+  color: #f3add9;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.qualites{
+  text-align: center;
+  color: white;
+}
+.titre_qp{
+  color: white;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.titre_qp > .fa-long-arrow-right{
+  color: #FF0084;
+}
+@media screen and (max-width: 500px) {
+  #qualites{
+    text-align: center;
+  }
+  .titre_qp{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+}
+/*****************************
+-----------LOISIRS------------
+*****************************/
+#loisirs{
+  font-family: 'Clicker Script', cursive;
+  color: #f3add9;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.loisirss{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.loisirs_star{
+  color: #FF0084;
+}
+.nom_loisirs{
+  text-align: center;
+  margin-right: 250px;
+  margin-top: 30px;
+}
+/******************************
+------------Boutton------------
+******************************/
+button{
+  background-color: transparent;
+  border: none;
+}

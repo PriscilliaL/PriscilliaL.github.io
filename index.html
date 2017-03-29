@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--Lien du fichier css-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--Lien du fichier bootstrap-->
+  <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+  <!--Icones-->
+  <script src="https://use.fontawesome.com/01849597be.js"></script>
+  <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css">
+  <!--Lien du fichier jquery-->
+  <script src="/home/priscillia/CV/cv2/assets/lib/jquery-2.2.4.js"></script>
+  <!--Police de caractère-->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Clicker+Script" rel="stylesheet">
+  <title>Lefebvre Priscillia</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-1 col-xs-1 col-sm-1 col-md-1" id="color_Pink"></div>
+      <div class="col-lg-11 col-xs-11 col-sm-11 col-md-11" id="content">
+        <!--COORDONNEES-->
+        <div class="coordonnes col-xs-12 col-lg-12">
+          <p><i class="fa fa-map-marker fa-lg"></i> 451 rue Marcel Poulin - Logement 2 - 60640 Guiscard</p>
+          <p class="tel"><i class="fa fa-phone fa-lg"></i> 06.65.13.87.48</p>
+          <p class="mail"><i class="fa fa-envelope fa-lg"></i> <a href="mailto:lefebvre.priscillia60@gmail.com">lefebvre.priscillia60@gmail.com</a></p>
+          <p class="linkedin"><i class="fa fa-linkedin fa-lg"></i> https://goo.gl/lHD28z</p>
+          <p class="github"><i class="fa fa-github fa-lg"></i> https://github.com/PriscilliaL</p>
+          <!--TRAIT DE SEPARATION-->
+          <div class="line col-xs-12"></div>
+          <!--/TRAIT DE SEPARATION-->
+        </div>
+        <!--/COORDONNEES-->
+        <!--NOM_PRENOM-->
+        <div class="nom_prenom">
+          <h3 class="prenom_nom"><span id="prenom">Priscillia</span> Lefebvre</h3>
+        </div>
+        <!--/NOM_PRENOM-->
+        <!--JOB-->
+        <div class="job">
+          <h3 id="job">Développeuse Web Junior</h3>
+        </div>
+        <!--/JOB-->
+        <!--TRAIT DE SEPARATION-->
+        <div class="line col-xs-12"></div>
+        <!--/TRAIT DE SEPARATION-->
+        <!--COMPETENCES-->
+        <div class="competences">
+          <button type="button" id="afficher_compt" name="button"><h3 id="competences">Mes compétences</h3></button>
+          <div class="liste_outils">
+            <div class="row text-center">
+              <h3 id="outils"><i class="fa fa-gear fa-x2"></i> Outils :</h3>
+              <div class="liste_outils col-md-3">
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> Atom :</p>
+                <progress value="70" max="100">70%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> NetBeans :</p>
+                <progress value="30" max="100">30%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> Bootstrap :</p>
+                <progress value="50" max="100">50%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> Ligne de commande :</p>
+                <progress value="40" max="100">40%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> Logiciel de maquettage :</p>
+                <progress value="60" max="100">60%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> LibreOffice :</p>
+                <progress value="60" max="100">60%</progress></p>
+              </div>
+              <div class="liste_langage col-md-offset-1 col-md-3">
+                <h3 id="langage"><i class="fa fa-comments-o fa-x2"></i> Langages :</h3>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> HTML/CSS :</p>
+                <progress value="70" max="100">70%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> LAMP/WAMP :</p>
+                <progress value="10" max="100">10%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> PHP :</p>
+                <progress value="10" max="100">10%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> JavaScript :</p>
+                <progress value="30" max="100">30%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> jQuery :</p>
+                <progress value="30" max="100">30%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> AngularJS :</p>
+                <progress value="30" max="100">30%</progress>
+              </div>
+              <div class="liste_outils col-md-offset-1 col-md-3">
+                <h3 id="framework"><i class="fa fa-gear fa-x2"></i> Framework :</h3>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> Angularjs :</p>
+                <progress value="30" max="100">30%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> jQuery :</p>
+                <progress value="30" max="100">30%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> Bootstrap :</p>
+                <progress value="50" max="100">50%</progress>
+                <p><i class="fa fa-arrow-circle-right fa-lg"></i> Symfony :</p>
+                <progress value="0" max="100">0%</progress>
+              </div>
+            </div>
+          </div>
+          <div class="line col-xs-12"></div>
+        </div>
+        <!--/COMPETENCES-->
+        <!--EXPERIENCES-->
+        <div class="experiences">
+          <button type="button" id="afficher_exp" name="button"><h3 id="experiences">Mes expériences</h3></button>
+          <div class="mes_experiences">
+            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2014 - 2015 :</p>
+            <p class="titre_descriptif">Agent polyvalent, Parc Carisiolas, Crisolles (60)</p>
+            <p class="descriptif">Gestions des stocks, tenu de caisse, encadrements de groupe d’adulte et d’enfants handicapés ou non, <br>gestions et organisation d’atelier pédagogique, équipements des clients, explications et mise en situation des règles de sécurité pour le Parcours Acrobatique en Hauteur.</p>
+            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2013 :</p>
+            <p class="titre_descriptif">Employée libre-service, E.Leclerc, Muille-Villette (80)</p>
+            <p class="descriptif">Mise en place des produits, emballage de denrée alimentaire et nettoyage des locaux.</p>
+            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2012 :</p>
+            <p class="titre_descriptif">Employée libre-service, E.Leclerc, Muille-Villette (80)</p>
+            <p class="descriptif">Mise en place des produits, gestions des stocks et nettoyage des locaux.</p>
+          </div>
+          <div class="line col-xs-12"></div>
+        </div>
+        <!--/EXPERIENCES-->
+        <!--FORMATIONS-->
+        <div class="formation">
+          <button type="button" id="afficher_form" name="button"><h3 id="formation">Mes formations</h3></button>
+          <div class="mes_formation">
+            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2017 :</p>
+            <p class="titre_descriptif">Formation, E2N, Noyon (60)</p>
+            <p class="descriptif">Préparation au titre professionnel Développeuse logiciel.</p>
+            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2015 :</p>
+            <p class="titre_descriptif">CQP OPAH, Parc Carisiolas, Crisolles (60)</p>
+            <p class="descriptif">Certificats de Qualifications Professionnel,  Opératrice de Parcours Acrobatique en Hauteur.</p>
+            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2012 :</p>
+            <p class="titre_descriptif">BEP MRCU, Lycée professionnel, Ham (80)</p>
+            <p class="descriptif">Métiers de la Relations aux Clients et aux Usagers.</p>
+          </div>
+          <div class="line col-xs-12"></div>
+        </div>
+        <!--/FORMATIONS-->
+        <!--QUALITES-->
+        <div class="qualites">
+          <button type="button" id="afficher_qualt" name="button"><h3 id="qualites">Mes qualités personnelle</h3></button>
+          <div class="mes_qualites">
+            <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Autonomie</span>
+            <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Dynamisme</span>
+            <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Esprit d'équipe</span>
+            <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Adaptabilité</span>
+          </div>
+        </div>
+        <!--/QUALITES-->
+        <div class="line col-xs-12"></div>
+        <!--LOISIRS-->
+        <div class="loisirss">
+          <button type="button" id="afficher_lois" name="button"><h3 id="loisirs">Mes loisirs</h3></button>
+          <div class="mes_loisirs">
+            <span class="nom_loisirs"><i class="fa fa-star fa-lg loisirs_star"></i> Parcours acrobatique en hauteur</span>
+            <span class="nom_loisirs"><i class="fa fa-star fa-lg loisirs_star"></i> A voir</span>
+            <span class="nom_loisirs"><i class="fa fa-star fa-lg loisirs_star"></i> A voir aussi.</span>
+          </div>
+        </div>
+        <!--/LOISIRS-->
+      </div>
+    </div>
+  </div><!--/.CONTAINER-FLUID-->
+  <script>
+  $(document).ready(function() {
+      //Afficher/Masquer compétences
+      $('.liste_outils').hide(0);
+      $('#afficher_compt').click(function(){
+        $('.liste_outils').toggle(1000);
+      })
+      //Afficher/Masquer experiences
+      $('.mes_experiences').hide(0);
+      $('#afficher_exp').click(function(){
+        $('.mes_experiences').toggle(1000);
+      })
+      //Afficher/Masquer formations
+      $('.mes_formation').hide(0);
+      $('#afficher_form').click(function(){
+        $('.mes_formation').toggle(1000);
+      })
+      //Afficher/Masquer qualités
+      $('.mes_qualites').hide(0);
+      $('#afficher_qualt').click(function(){
+        $('.mes_qualites').toggle(1000);
+      })
+      //Afficher/Masquer loisirs
+      $('.mes_loisirs').hide(0);
+      $('#afficher_lois').click(function(){
+        $('.mes_loisirs').toggle(1000);
+      })
+    })
+  </script>
+</body>
+</html>
