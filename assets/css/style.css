@@ -60,11 +60,29 @@ body{
 .mail{
   text-align: right;
 }
+.mail > a{
+  color: white;
+}
+.mail > a:hover{
+  color: #FF0084;
+}
 .linkedin{
   text-align: left;
 }
+.linkedin > a{
+  color: white;
+}
+.linkedin > a:hover{
+  color: #FF0084;
+}
 .github{
   text-align: center;
+}
+.github > a{
+  color: white;
+}
+.github > a:hover{
+  color: #FF0084;
 }
 .cvpapier{
   text-align: right;
