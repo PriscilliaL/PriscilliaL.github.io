@@ -226,6 +226,9 @@ body{
   padding: 0;
   margin-top: 80px;
 }
+.mes_experiences{
+  margin-top: 30px;
+}
 .annee{
   color: #FF0084;
   text-decoration: underline;
@@ -264,6 +267,9 @@ body{
   padding: 0;
   margin-top: 80px;
 }
+.mes_formation{
+  margin-top: 30px;
+}
 @media screen and (max-width: 500px) {
   #formation{
     text-align: center;
@@ -285,6 +291,9 @@ body{
   text-align: center;
   color: white;
   margin-top: 80px;
+}
+.mes_qualites{
+  margin-top: 40px;
 }
 .titre_qp{
   color: white;
