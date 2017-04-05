@@ -35,14 +35,4 @@ $(document).ready(function() {
       $('.mes_loisirs').hide();
       $('.mes_formation').hide();
     })
-    //Afficher/Masquer loisirs
-    $('.mes_loisirs').hide(0);
-    $('#afficher_lois').click(function(){
-      $('.mes_loisirs').toggle(500);
-      $('.mes_experiences').hide();
-      $('.mes_formation').hide();
-      $('.mes_qualites').hide();
-      $('.liste_outils').hide();
-    })
-
   })
