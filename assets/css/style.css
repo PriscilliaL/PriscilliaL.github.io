@@ -66,6 +66,9 @@ body{
 .github{
   text-align: center;
 }
+.cvpapier{
+  text-align: right;
+}
 @media screen and (max-width: 500px) {
   .coordonnes, .tel, .mail, .linkedin, .github{
     text-align: center;
