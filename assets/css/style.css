@@ -256,6 +256,10 @@ body{
   #experiences{
     text-align: center;
   }
+  .mes_experiences{
+    margin-top: 30px;
+    margin-left: 10px;
+  }
 }
 /**************************
 --------FORMATIONS--------
@@ -352,4 +356,18 @@ button{
     margin: 0;
     padding: 0;
   }
+}
+/********************************
+---------------navbar------------
+********************************/
+.navbar-default, .navbar-toggle, .icon-bar:nth-of-type(2) {
+	  background-color: transparent;
+}
+.navbar-default{
+  width: 100px;
+  border: none;
+}
+.navbar-default .navbar-nav > li > a{
+  color: #F2ADD9;
+  font-weight: bold;
 }

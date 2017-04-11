@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Lien du fichier bootstrap-->
   <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!--Icones-->
   <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css">
   <!--Lien du fichier css-->
@@ -44,14 +45,34 @@
         <!--TRAIT DE SEPARATION-->
         <div class="line col-xs-12"></div>
         <!--/TRAIT DE SEPARATION-->
-        <!--COMPETENCES-->
-        <div class="bouton col-md-12 col-lg-12">
+        <nav class="navbar navbar-default navbar-fixed-right hidden-md hidden-lg">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a id="burger_comp" href="#comp">Compétences</a></li>
+                <li><a id="burger_exp" href="#exp">Expériences</a></li>
+                <li><a id="burger_form" href="#form">Formations</a></li>
+                <li><a id="burger_qualt" href="#qualt">Qualités personnelle</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="bouton col-md-12 col-lg-12 hidden-sm hidden-xs">
           <button type="button" id="afficher_compt" name="button"><h3 id="competences">Mes compétences</h3></button>
           <button type="button" id="afficher_exp" name="button"><h3 id="experiences">Mes expériences</h3></button>
           <button type="button" id="afficher_form" name="button"><h3 id="formation">Mes formations</h3></button>
           <button type="button" id="afficher_qualt" name="button"><h3 id="qualites">Mes qualités personnelle</h3></button>
         </div>
-        <div class="competences">
+        <!--COMPETENCES-->
+        <div id="comp" class="competences">
           <div class="row text-center liste_outils">
             <div class="row">
               <div class="col-md-12 col-lg-12">
@@ -67,203 +88,203 @@
                   <span class="linux col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> Linux :
                     <div class="progress">
                       <div class="progress-bar progress-bar-striped active" role="progressbar"
-                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                        60%
-                      </div>
-                    </div></span>
+                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                      60%
+                    </div>
+                  </div></span>
                 </div>
               </div>
             </div>
-              <div class="liste_langage col-md-12 col-lg-12">
-                <h4 id="langage"><i class="fa fa-comments-o fa-x2"></i> Langages :</h4>
-                <span class="html col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> HTML/CSS :
+            <div class="liste_langage col-md-12 col-lg-12">
+              <h4 id="langage"><i class="fa fa-comments-o fa-x2"></i> Langages :</h4>
+              <span class="html col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> HTML/CSS :
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  70%
+                </div>
+              </div></span>
+              <span class="js col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> JavaScript :
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                  30%
+                </div>
+              </div></span>
+              <span class="php col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> PHP
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                  10%
+                </div>
+              </div></span>
+            </div>
+            <div class="liste_outils col-md-12 col-lg-12">
+              <h4 id="framework"><i class="fa fa-book fa-x2"></i> Framework/Bibliothèque:</h4>
+              <span class="col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> Bootstrap :
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                  50%
+                </div>
+              </div></span>
+              <span class="col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> jQuery/jQuery UI :
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                  30%
+                </div>
+              </div></span>
+              <span class="col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> AngularJS :
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                  30%
+                </div>
+              </div></span>
+              <span class="col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> Symfony :
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar"
+                  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                  0%
+                </div>
+              </div></span>
+            </div>
+            <div class="liste_outils col-md-12 col-lg-12">
+              <h4 id="outils"><i class="fa fa-gear fa-x2"></i> Outils :</h4>
+              <div class="col-md-12 col-lg-3 toto">
+                <div class="ligne totos"><i class="fa fa-arrow-circle-right fa-lg"></i> Ligne de commande :
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar"
-                      aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                      70%
-                    </div>
-                  </div></span>
-                <span class="js col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> JavaScript :
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    40%
+                  </div>
+                </div></div>
+                <div class="nano totos"><i class="fa fa-arrow-circle-right fa-lg"></i> Nano :
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar"
-                      aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                      30%
-                    </div>
-                  </div></span>
-                <span class="php col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> PHP
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    50%
+                  </div>
+                </div></div>
+                <div class="atom totos"><i class="fa fa-arrow-circle-right fa-lg"></i> Atom :
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar"
-                      aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
-                      10%
-                    </div>
-                  </div></span>
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    50%
+                  </div>
+                </div></div>
               </div>
-              <div class="liste_outils col-md-12 col-lg-12">
-                <h4 id="framework"><i class="fa fa-book fa-x2"></i> Framework/Bibliothèque:</h4>
-                <span class="col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> Bootstrap :
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar"
-                      aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                      50%
-                    </div>
-                  </div></span>
-                <span class="col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> jQuery/jQuery UI :
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar"
-                      aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                      30%
-                    </div>
-                  </div></span>
-                <span class="col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> AngularJS :
+              <div class="col-md-3 col-lg-3 toto">
+                <span class="netbeans "><i class="fa fa-arrow-circle-right fa-lg"></i> NetBeans :
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar"
                     aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
                     30%
                   </div>
                 </div></span>
-                <span class="col-lg-3"><i class="fa fa-arrow-circle-right fa-lg"></i> Symfony :
+                <span class="git "><i class="fa fa-arrow-circle-right fa-lg"></i> Git :
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar"
-                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
-                    0%
-                    </div>
-                  </div></span>
+                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    60%
+                  </div>
+                </div></span>
+                <span class="github "><i class="fa fa-arrow-circle-right fa-lg"></i> Github/BitBucket/Gitlab :
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
+                  </div>
+                </div></span>
               </div>
-              <div class="liste_outils col-md-12 col-lg-12">
-                <h4 id="outils"><i class="fa fa-gear fa-x2"></i> Outils :</h4>
-                  <div class="col-md-12 col-lg-3 toto">
-                    <div class="ligne totos"><i class="fa fa-arrow-circle-right fa-lg"></i> Ligne de commande :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                          40%
-                        </div>
-                      </div></div>
-                    <div class="nano totos"><i class="fa fa-arrow-circle-right fa-lg"></i> Nano :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                        50%
-                      </div>
-                    </div></div>
-                    <div class="atom totos"><i class="fa fa-arrow-circle-right fa-lg"></i> Atom :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                          50%
-                        </div>
-                      </div></div>
+              <div class="col-md-3 col-lg-3 toto">
+                <span class="lamp "><i class="fa fa-arrow-circle-right fa-lg"></i> LAMP/WAMP :
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    40%
                   </div>
-                  <div class="col-md-3 col-lg-3 toto">
-                    <span class="netbeans "><i class="fa fa-arrow-circle-right fa-lg"></i> NetBeans :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                          30%
-                        </div>
-                      </div></span>
-                    <span class="git "><i class="fa fa-arrow-circle-right fa-lg"></i> Git :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          60%
-                        </div>
-                      </div></span>
-                    <span class="github "><i class="fa fa-arrow-circle-right fa-lg"></i> Github/BitBucket/Gitlab :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                          70%
-                        </div>
-                      </div></span>
+                </div></span>
+                <span class="gimp "><i class="fa fa-arrow-circle-right fa-lg"></i> GIMP :
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    40%
                   </div>
-                  <div class="col-md-3 col-lg-3 toto">
-                    <span class="lamp "><i class="fa fa-arrow-circle-right fa-lg"></i> LAMP/WAMP :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                          40%
-                        </div>
-                      </div></span>
-                    <span class="gimp "><i class="fa fa-arrow-circle-right fa-lg"></i> GIMP :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                          40%
-                        </div>
-                      </div></span>
-                    <span class="pencil "><i class="fa fa-arrow-circle-right fa-lg"></i> Pencil :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                          30%
-                        </div>
-                      </div></span>
+                </div></span>
+                <span class="pencil "><i class="fa fa-arrow-circle-right fa-lg"></i> Pencil :
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    30%
                   </div>
-                  <div class="col-md-3 col-lg-3 toto">
-                    <span class="draw "><i class="fa fa-arrow-circle-right fa-lg"></i> Draw.io :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          60%
-                        </div>
-                      </div></span>
-                    <span class="dep "><i class="fa fa-arrow-circle-right fa-lg"></i> Gestionnaire de dépendances :
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar"
-                          aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                          40%
-                        </div>
-                      </div></span>
+                </div></span>
+              </div>
+              <div class="col-md-3 col-lg-3 toto">
+                <span class="draw "><i class="fa fa-arrow-circle-right fa-lg"></i> Draw.io :
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    60%
                   </div>
+                </div></span>
+                <span class="dep "><i class="fa fa-arrow-circle-right fa-lg"></i> Gestionnaire de dépendances :
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    40%
+                  </div>
+                </div></span>
               </div>
             </div>
           </div>
         </div>
-        <!--/COMPETENCES-->
-        <!--EXPERIENCES-->
-        <div class="experiences">
-          <div class="mes_experiences col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2017 :</p>
-            <p class="titre_descriptif">Formation, E2N, Noyon (60)</p>
-            <p class="descriptif">Formation de 6 mois en 35h par semaine, labellisé Grande École du Numérique par l'État.<br>Création d'un site e-commerce en AngularJS. Transformation d'un site existant en responsive.<br>Création d'un site e-commerce en jQuery.</p>
-            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2014 - 2015 :</p>
-            <p class="titre_descriptif">Agent polyvalent, Parc Carisiolas, Crisolles (60)</p>
-            <p class="descriptif">Gestions des stocks, tenu de caisse, encadrements de groupe d’adulte et d’enfants handicapés ou non, <br>gestions et organisation d’atelier pédagogique, équipements des clients, explications et mise en situation <br>des règles de sécurité pour le Parcours Acrobatique en Hauteur.</p>
-            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2012 - 2013 :</p>
-            <p class="titre_descriptif">Employée libre-service, E.Leclerc, Muille-Villette (80)</p>
-            <p class="descriptif">Gestions des stocks, mise en place des produits, emballage de denrée alimentaire et nettoyage des locaux.</p>
-          </div>
-        </div>
-        <!--/EXPERIENCES-->
-        <!--FORMATIONS-->
-        <div class="formation">
-          <div class="mes_formation col-md-12 col-lg-12">
-            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2017 :</p>
-            <p class="titre_descriptif">Formation, E2N, Noyon (60)</p>
-            <p class="descriptif">Préparation au titre professionnel Développeuse logiciel.<br>Titre certifié au RNCP Niveau III (équivalent BAC +2).</p>
-            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2015 :</p>
-            <p class="titre_descriptif">CQP OPAH, Parc Carisiolas, Crisolles (60)</p>
-            <p class="descriptif">Certificats de Qualifications Professionnel,  Opératrice de Parcours Acrobatique en Hauteur.</p>
-            <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2012 :</p>
-            <p class="titre_descriptif">BEP MRCU, Lycée professionnel, Ham (80)</p>
-            <p class="descriptif">Métiers de la Relations aux Clients et aux Usagers.</p>
-          </div>
-        </div>
-        <!--/FORMATIONS-->
-        <!--QUALITES-->
-        <div class="qualites">
-          <div class="mes_qualites col-md-12 col-lg-12">
-            <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Autonomie</span>
-            <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Dynamisme</span>
-            <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Esprit d'équipe</span>
-            <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Écoute active</span>
-          </div>
-        </div>
-        <!--/QUALITES-->
       </div>
+      <!--/COMPETENCES-->
+      <!--EXPERIENCES-->
+      <div id="exp" class="experiences">
+        <div class="mes_experiences col-xs-11 col-sm-12 col-md-12 col-lg-12">
+          <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2017 :</p>
+          <p class="titre_descriptif">Formation, E2N, Noyon (60)</p>
+          <p class="descriptif">Formation de 6 mois en 35h par semaine, labellisé Grande École du Numérique par l'État.<br>Création d'un site e-commerce en AngularJS. Transformation d'un site existant en responsive.<br>Création d'un site e-commerce en jQuery.</p>
+          <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2014 - 2015 :</p>
+          <p class="titre_descriptif">Agent polyvalent, Parc Carisiolas, Crisolles (60)</p>
+          <p class="descriptif">Gestions des stocks, tenu de caisse, encadrements de groupe d’adulte et d’enfants handicapés ou non, <br>gestions et organisation d’atelier pédagogique, équipements des clients, explications et mise en situation <br>des règles de sécurité pour le Parcours Acrobatique en Hauteur.</p>
+          <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2012 - 2013 :</p>
+          <p class="titre_descriptif">Employée libre-service, E.Leclerc, Muille-Villette (80)</p>
+          <p class="descriptif">Gestions des stocks, mise en place des produits, emballage de denrée alimentaire et nettoyage des locaux.</p>
+        </div>
+      </div>
+      <!--/EXPERIENCES-->
+      <!--FORMATIONS-->
+      <div id="form" class="formation">
+        <div class="mes_formation col-md-12 col-lg-12">
+          <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2017 :</p>
+          <p class="titre_descriptif">Formation, E2N, Noyon (60)</p>
+          <p class="descriptif">Préparation au titre professionnel Développeuse logiciel.<br>Titre certifié au RNCP Niveau III (équivalent BAC +2).</p>
+          <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2015 :</p>
+          <p class="titre_descriptif">CQP OPAH, Parc Carisiolas, Crisolles (60)</p>
+          <p class="descriptif">Certificats de Qualifications Professionnel,  Opératrice de Parcours Acrobatique en Hauteur.</p>
+          <p class="annee"><i class="fa fa-long-arrow-right fa-lg"></i> 2012 :</p>
+          <p class="titre_descriptif">BEP MRCU, Lycée professionnel, Ham (80)</p>
+          <p class="descriptif">Métiers de la Relations aux Clients et aux Usagers.</p>
+        </div>
+      </div>
+      <!--/FORMATIONS-->
+      <!--QUALITES-->
+      <div class="qualites">
+        <div class="mes_qualites col-md-12 col-lg-12">
+          <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Autonomie</span>
+          <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Dynamisme</span>
+          <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Esprit d'équipe</span>
+          <span class="titre_qp"><i class="fa fa-long-arrow-right fa-lg"></i> Écoute active</span>
+        </div>
+      </div>
+      <!--/QUALITES-->
     </div>
   </div>
+</div>
 </div><!--/.CONTAINER-FLUID-->
 <script src="assets/lib/jquery-2.2.4.js"></script>
 <script src="assets/js/bootstrap.js"></script>
