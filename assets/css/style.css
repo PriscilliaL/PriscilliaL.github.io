@@ -179,6 +179,9 @@ body{
   color: white;
   margin-left: -1%;
 }
+ul{
+  color: white;
+}
 #framework{
   font-family: 'Cabin', sans-serif;
   color: #FF0084;
